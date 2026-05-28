@@ -769,11 +769,19 @@ textarea {
     z-index: 0;
     width: min(100%, 560px);
     height: auto;
-    margin: 8px auto 28px;
+    margin: 4px auto 24px;
     object-fit: contain;
     object-position: center;
     opacity: 1;
     transform: none;
+  }
+
+  .hero-orbit {
+    display: none;
+  }
+
+  .hero-grid {
+    opacity: 0.18;
   }
 
   .hero-content {

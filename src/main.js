@@ -1,6 +1,7 @@
 import './styles.css';
 
-const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || '';
+const accessKey =
+  import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || '22d35c43-c247-4193-9ba3-991dd74cb517';
 
 document.querySelector('#app').innerHTML = `
   <header class="site-header" data-header>
@@ -167,8 +168,8 @@ document.querySelector('#app').innerHTML = `
             Choose the reason for your inquiry and share a few details. CGH Web Design will use that context to start the right conversation.
           </p>
           <div class="contact-note">
-            <strong>Web3Forms ready</strong>
-            <span>Add your access key to the environment file before production submissions go live.</span>
+            <strong>Secure Web3Forms delivery</strong>
+            <span>Your inquiry is sent directly to CGH Web Design with the project details included.</span>
           </div>
         </div>
         <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" data-contact-form>
@@ -296,7 +297,7 @@ const formStatus = document.querySelector('[data-form-status]');
 contactForm.addEventListener('submit', (event) => {
   if (!accessKey || accessKey === 'replace_with_your_web3forms_access_key') {
     event.preventDefault();
-    formStatus.textContent = 'Add your Web3Forms access key before sending live inquiries.';
+    formStatus.textContent = 'The contact form is missing its Web3Forms access key.';
     formStatus.classList.add('is-visible');
   }
 });

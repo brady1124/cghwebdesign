@@ -117,10 +117,10 @@ app.innerHTML = `
           <p class="eyebrow">Contact</p>
           <h2>Tell us what you want to build.</h2>
           <p>Choose the reason for your inquiry and share a few details. CGH Web Design will use that context to start the right conversation.</p>
-          <div class="contact-note"><strong>Web3Forms ready</strong><span>Add your access key to the environment file before production submissions go live.</span></div>
+          <div class="contact-note"><strong>Secure Web3Forms delivery</strong><span>Your inquiry is sent directly to CGH Web Design with the project details included.</span></div>
         </div>
         <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" data-contact-form>
-          <input type="hidden" name="access_key" value="" />
+          <input type="hidden" name="access_key" value="22d35c43-c247-4193-9ba3-991dd74cb517" />
           <input type="hidden" name="subject" value="New CGH Web Design inquiry" />
           <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" />
           <label>Name<input name="name" type="text" autocomplete="name" required /></label>
@@ -194,7 +194,6 @@ const contactForm = document.querySelector('[data-contact-form]');
 const formStatus = document.querySelector('[data-form-status]');
 
 contactForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-  formStatus.textContent = 'Add your Web3Forms access key before sending live inquiries.';
+  formStatus.textContent = 'Sending your inquiry through Web3Forms...';
   formStatus.classList.add('is-visible');
 });
