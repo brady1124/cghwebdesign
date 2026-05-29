@@ -97,15 +97,15 @@ app.innerHTML = `
           </div>
         </article>
         <article class="portfolio-card">
-          <a class="portfolio-preview" href="https://offdutys.vercel.app" target="_blank" rel="noreferrer" aria-label="Open Off Dutys website">
-            <iframe src="https://offdutys.vercel.app" title="Off Dutys website preview" loading="lazy" tabindex="-1"></iframe>
-            <span class="preview-fallback">offdutys.vercel.app</span>
+          <a class="portfolio-preview" href="https://offdutys.app" target="_blank" rel="noreferrer" aria-label="Open Off Dutys website">
+            <iframe src="https://offdutys.app" title="Off Dutys website preview" loading="lazy" tabindex="-1"></iframe>
+            <span class="preview-fallback">offdutys.app</span>
           </a>
           <div class="portfolio-copy">
             <span>Vercel Web App</span>
             <h3>Off Dutys</h3>
             <p>A modern deployed web experience with fast hosting and clean interaction paths.</p>
-            <a class="text-link" href="https://offdutys.vercel.app" target="_blank" rel="noreferrer">Visit Website</a>
+            <a class="text-link" href="https://offdutys.app" target="_blank" rel="noreferrer">Visit Website</a>
           </div>
         </article>
       </div>
